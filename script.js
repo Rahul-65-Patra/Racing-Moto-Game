@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var blueCar = document.querySelector('#bluecar');
 var raceCar = document.querySelector('#racecar');
 var result = document.querySelector('#result');
@@ -49,7 +49,7 @@ setInterval(function GameOver() {
         counter = 0;
     }
 }, 10);
-=======
+
 
 var blueCar=document.querySelector('#bluecar');
 var raceCar=document.querySelector('#racecar')
@@ -107,7 +107,3 @@ setInterval(function GameOver(){
   }
 }, 10)
 
-
-
-
->>>>>>> b86ad7995773f1b4a1279f3a05822a16c61cd681

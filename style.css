@@ -22,6 +22,7 @@ body {
   left: 0px;
   text-align: center;
   animation: move 2s linear infinite;
+  cursor: pointer;
 }
 @keyframes move {
   0% {
