@@ -27,13 +27,15 @@ function moveCar(e) {
         if (raceCarLeft < 260) {
             raceCar.style.left = (raceCarLeft + 130) + "px";
         }
-    } else {
+        jumpsound.play();
+    } 
+    else {
         // Move left
         if (raceCarLeft > 0) {
             raceCar.style.left = (raceCarLeft - 130) + "px";
-        }
+            jumpsound.play();
+        } 
     }
-    jumpsound.play();
 }
 
 // Game Over check
@@ -51,6 +53,10 @@ setInterval(function GameOver() {
 }, 10);
 
 
+
+
+//--------------------- This is samecode but this code will run mouse press left and right key ----------------------
+
 var blueCar=document.querySelector('#bluecar');
 var raceCar=document.querySelector('#racecar')
 var result=document.querySelector('#result')
@@ -58,8 +64,8 @@ var score=document.querySelector('#score')
 var game=document.querySelector('#game')
 var jumpsound=document.querySelector('#jumpsound')
 
-// blueCar move
 
+// blueCar move
 blueCar.addEventListener("animationiteration",function(){  //animationiteration is a event any animation repeat everytype then used animationiteration
 
     var random=((Math.floor(Math.random() * 3)) * 130);
@@ -92,6 +98,8 @@ if(e.keyCode =="37"){
 
 })
 
+
+
 //   Game Over
 var counter=0;
 setInterval(function GameOver(){
@@ -107,3 +115,4 @@ setInterval(function GameOver(){
   }
 }, 10)
 
+q   
